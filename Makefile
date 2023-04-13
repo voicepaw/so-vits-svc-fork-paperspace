@@ -6,6 +6,8 @@ help:	## Show this help and exit
 
 install: ## Install dependencies
 	pip install -U pip wheel lxml
+	pip uninstall -y torchvision
+	pip install -U torch==2.0.0 torchaudio==2.0
 	pip install so-vits-svc-fork
 
 preprocess: ## Preprocess data
